@@ -15,3 +15,10 @@
 Console.WriteLine("Программа показывает, является ли введённый номер дня недели выходным днём.");
 Console.Write("Введите номер дня недели от 1 до 7: ");
 int numDay = Convert.ToInt32(Console.ReadLine());
+
+if((1 <= numDay) && (numDay <= 5))
+    Console.WriteLine("Нет. Рабочий день.");
+else if ((numDay == 6) || (numDay == 7))
+    Console.WriteLine("Да. Выходной день.");
+else
+    Console.WriteLine("Простите, но данный номер дня недели мне не знаком.");
